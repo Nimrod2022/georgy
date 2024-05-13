@@ -16,6 +16,10 @@
     font-family: 'Oleo Script';
   }
 
+  .inter{
+    font-family: 'Inter';
+  }
+
 
 .name{
 /* font-family: Poppins;
@@ -35,7 +39,6 @@ text-align: left; */
     text-align: center;
 
 }
-
 
 .titleDark {
     font-family: Poppins;
@@ -61,4 +64,35 @@ text-align: left; */
     color: transparent;
   }
 
+
+.about-text-dark{
+
+    font-family: Poppins;
+    
+    font-weight: 600;
+    line-height: 39px;
+    text-align: center;
+
+    background: linear-gradient(90.54deg, #4FC3F7 0.46%, #FFFFFF 91.25%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+
+}
+
+.about-text-light{
+
+    font-family: Poppins;
+    
+    font-weight: 600;
+    line-height: 39px;
+    text-align: center;
+    background: linear-gradient(90.54deg, #4FC3F7 0.46%, #484E53 91.25%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+
+}
 

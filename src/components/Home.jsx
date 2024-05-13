@@ -12,16 +12,12 @@ const Home = ({ darkMode, scrollToContact }) => {
         <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-16 pt-20 md:h-screen poppins flex flex-col justify-center bg-no-repeat  bg-center bg-[url('/assets/landing-bg-light.svg')] dark:bg-[url('/assets/landing-bg-dark.svg')]">
           <div className="px-5   text-white md:flex md:gap-5 md:justify-center  ">
             <div className="items-center flex flex-col   md:w-[50%] ">
-              <img
-                className="rounded-full h-56"
-                src={profile}
-                alt="profile "
-              />
+              <img className="rounded-full h-56" src={profile} alt="profile " />
               <p className="text-3xl md:text-5xl font-bold md:py-2 md:pt-5 pt-3 text-[#484E53] name dark:text-white md:text-start text-center ">
                 George Mururi
               </p>
               <h1 className="md:py-3 py-3 font-extrabold text-2xl md:text-3xl md:text-start text-center">
-              <span className="dark:titleDark title">Data Sorcerer</span> 🧙🏽
+                <span className="dark:titleDark title">Data Sorcerer</span> 🧙🏽
               </h1>
               <p className="w-full text-xs text-[#484E53] intro dark:text-[#E1E1E1]  text-center ">
                 As a passionate data scientist, with expertise in machine
@@ -39,24 +35,7 @@ const Home = ({ darkMode, scrollToContact }) => {
                 </button>
               </div>
             </div>
-
-            {/* <div className="md:pt-0 pt-10">
-              <img
-                src={darkMode ? darkHomeProfile : lightHomeProfile}
-                alt="home-profile"
-                className="h-64 md:h-72"
-              />
-            </div> */}
           </div>
-
-          {/* <div className="items-center flex flex-col pb-10 pt-8 justify-center md:hidden">
-            <button
-              type="button"
-              className="bg-[#26313F] dark:bg-[#55E5A4] text-white dark:text-black text-md font-semibold rounded-lg px-2 py-2"
-            >
-              Get in Touch
-            </button>
-          </div> */}
         </div>
       </div>
     </>
