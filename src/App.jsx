@@ -1,13 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import Home from './components/Home'
+import Navbar from './components/Navbar'
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(true);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   
 
   return (
     <>
+    <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode}/>
+
+    <Home darkMode={darkMode} setDarkMode={toggleDarkMode}/>
     
     </>
   )
