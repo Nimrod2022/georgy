@@ -1,5 +1,9 @@
 const servicesDark = "/assets/bulb-services-dark.svg";
 const servicesLight = "/assets/bulb-services-light.svg";
+const chatbotDark = "/assets/chatbot-dark.svg";
+const chatbotLight = "/assets/chatbot-light.svg";
+const mlDark = "/assets/ml-dark.svg";
+const mlLight = "/assets/ml-light.svg";
 
 const Services = ({ darkMode }) => {
   return (
@@ -13,9 +17,9 @@ const Services = ({ darkMode }) => {
             My services
           </h3>
 
-          <div className="flex flex-col md:pt-20 gap-16 justify-center">
+          <div className="flex flex-col md:pt-20 pt-5 md:gap-16 gap-10 justify-center">
             {/* Upper container */}
-            <div className="flex flex-col md:flex-row gap-10 justify-center ">
+            <div className="flex flex-col md:flex-row gap-10 justify-center md:px-0 px-5 ">
               <div className="inter service-box rounded-xl border-[#2B2B2B] dark:bg-[#1C1C1C] bg-[#edf5ff] px-5">
                 <img
                   src={darkMode ? servicesDark : servicesLight}
@@ -74,31 +78,65 @@ const Services = ({ darkMode }) => {
             </div>
 
             {/* Lower container */}
-            <div className="flex gap-10 justify-center">
-              <div className="inter flex gap-5 chatbotbox rounded-xl border-[#2B2B2B] dark:bg-[#1C1C1C] bg-[#edf5ff] px-5">
-               <div>
-               <img
-                  src={darkMode ? servicesDark : servicesLight}
-                  alt="service"
-                  className="pt-10 pb-5"
-                />
 
-                <h3 className="dark:text-white font-semibold text-[#484E53] py-3">
-                  {" "}
-                  AI Chatbots
-                </h3>
-                <p className="dark:text-[#E1E1E1] md:w-[90%] text-[#1C1E53] text-md ">
-                  From design to deployment, I build AI Chatbots that enhance
-                  customer interactions, streamline processes, and elevate your
-                  brand's engagement, bringing innovative solutions to your
-                  audience's fingertips
-                </p>
-               </div>
-               <img src="/assets/ai-chatbot.png" alt="chatbox" className="size-60 rounded-xl mt-10" />
-              </div>
-              <div className="inter service-box rounded-xl border-[#2B2B2B] dark:bg-[#1C1C1C] bg-[#edf5ff] px-5">
+            <div className="md:flex gap-10 justify-center px-5">
+              <div className="inter md:hidden block pb-10 chatbotboxmobile rounded-xl border-[#2B2B2B] dark:bg-[#1C1C1C] bg-[#edf5ff] px-5">
+                {/* Mobile chatbot start*/}
+                <div>
+                  <img
+                    src={darkMode ? chatbotDark : chatbotLight}
+                    alt="service"
+                    className="pt-10 pb-5"
+                  />
+
+                  <h3 className="dark:text-white font-semibold text-[#484E53] py-3">
+                    {" "}
+                    AI Chatbots
+                  </h3>
+                  <p className="dark:text-[#E1E1E1] md:w-[90%] text-[#1C1E53] text-md ">
+                    From design to deployment, I build AI Chatbots that enhance
+                    customer interactions, streamline processes, and elevate
+                    your brand's engagement, bringing innovative solutions to
+                    your audience's fingertips
+                  </p>
+                </div>
                 <img
-                  src={darkMode ? servicesDark : servicesLight}
+                  src="/assets/ai-chatbot.png"
+                  alt="chatbox"
+                  className="size-60 rounded-xl mt-10"
+                />
+              </div>
+
+              {/* Mobile chatbot end*/}
+
+              <div className="inter hidden md:flex gap-5 chatbotbox rounded-xl border-[#2B2B2B] dark:bg-[#1C1C1C] bg-[#edf5ff] px-5">
+                <div>
+                  <img
+                    src={darkMode ? chatbotDark : chatbotLight}
+                    alt="service"
+                    className="pt-10 pb-5"
+                  />
+
+                  <h3 className="dark:text-white font-semibold text-[#484E53] py-3">
+                    {" "}
+                    AI Chatbots
+                  </h3>
+                  <p className="dark:text-[#E1E1E1] md:w-[90%] text-[#1C1E53] text-md ">
+                    From design to deployment, I build AI Chatbots that enhance
+                    customer interactions, streamline processes, and elevate
+                    your brand's engagement, bringing innovative solutions to
+                    your audience's fingertips
+                  </p>
+                </div>
+                <img
+                  src="/assets/ai-chatbot.png"
+                  alt="chatbox"
+                  className="size-60 rounded-xl mt-10"
+                />
+              </div>
+              <div className="inter mt-10 md:mt-0 service-box rounded-xl border-[#2B2B2B] dark:bg-[#1C1C1C] bg-[#edf5ff] px-5">
+                <img
+                  src={darkMode ? mlDark : mlLight}
                   alt="service"
                   className="pt-10 pb-5"
                 />
