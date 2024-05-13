@@ -80,8 +80,9 @@ const Services = ({ darkMode }) => {
             {/* Lower container */}
 
             <div className="md:flex gap-10 justify-center px-5">
+                  {/* Mobile chatbot start*/}
               <div className="inter md:hidden block pb-10 chatbotboxmobile rounded-xl border-[#2B2B2B] dark:bg-[#1C1C1C] bg-[#edf5ff] px-5">
-                {/* Mobile chatbot start*/}
+              
                 <div>
                   <img
                     src={darkMode ? chatbotDark : chatbotLight}

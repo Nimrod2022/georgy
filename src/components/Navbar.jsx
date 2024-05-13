@@ -11,7 +11,7 @@ const lightIcon = "/assets/light-theme-icon.svg";
 const Navbar = ({ darkMode, setDarkMode }) => {
   //  Sticky nav handling
   const [scrolled, setScrolled] = useState(false);
-  const [bgColor, setBgColor] = useState(darkMode ? "#151C25" : "#F0F0F4");
+  const [bgColor, setBgColor] = useState(darkMode ? "#1A1A1A" : "#E0E8F6");
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
@@ -20,11 +20,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   useEffect(() => {
     // Update the background color based on the current dark mode
-    setBgColor(darkMode ? "#151C25" : "#F0F0F4");
+    setBgColor(darkMode ? "#1A1A1A" : "#E0E8F6");
 
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
-      if (window.scrollY > 10) setBgColor(darkMode ? "#26313F" : "#d6d7dc");
+      if (window.scrollY > 10) setBgColor(darkMode ? "#26313F" : "#ecf5ff");
       else setBgColor(darkMode ? "#1A1A1A" : "#E0E8F6");
     };
     window.addEventListener("scroll", handleScroll);
@@ -44,12 +44,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <nav className="flex justify-between items-center md:items-center  text-lg px-5 md:px-36  md:py-4">
             <div>
               <Link to="/#" smooth={true} duration={700}>
-                <h1 className="oleo text-[#000000] dark:text-white text-xl hover:cursor-pointer md:text-3xl">Georgy</h1>
-                {/* <img
-                  src={darkMode ? logoDarkMode : logoLightMode}
-                  alt="logo"
-                  className="hover:cursor-pointer size-10  md:size-12"
-                /> */}
+                <h1 className="oleo text-[#000000] dark:text-white text-xl hover:cursor-pointer md:text-3xl">
+                  Georgy
+                </h1>
               </Link>
             </div>
 

@@ -113,8 +113,19 @@ opacity: 0px;
 
 .chatbotboxmobile{
     width: 325px;
-    height: 690px;
+    height: 650px;
     gap: 0px;
     opacity: 0px;
     }
-    
+
+
+    .stickynav {
+        position: fixed;
+        top: 0;
+        width: full;
+        z-index: 50;
+        width: 100%;
+        animation-duration: 0.7s;
+        animation-name: fadeInDown;
+        animation-timing-function: ease-out;
+      }
