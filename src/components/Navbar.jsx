@@ -41,10 +41,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           className="md:py-2 py-3 relative"
           style={{ backgroundColor: bgColor }}
         >
-          <nav className="flex justify-between items-center md:items-center  text-lg px-8 md:px-36  md:py-4">
+          <nav className="flex justify-between items-center md:items-center  text-lg px-5 md:px-36  md:py-4">
             <div>
               <Link to="/#" smooth={true} duration={700}>
-                <h1 className="oleo text-[#000000] dark:text-white md:text-3xl">Georgy</h1>
+                <h1 className="oleo text-[#000000] dark:text-white text-xl hover:cursor-pointer md:text-3xl">Georgy</h1>
                 {/* <img
                   src={darkMode ? logoDarkMode : logoLightMode}
                   alt="logo"
@@ -124,12 +124,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div className="sm:hidden block z-10">
               {isOpen ? (
                 <AiOutlineClose
-                  className="text-3xl dark:text-[#55E5A4] text-[d6d7dc]"
+                  className="text-3xl dark:text-[#4FC3F7] text-white"
                   onClick={toggleNav}
                 />
               ) : (
                 <BiMenuAltRight
-                  className="text-4xl dark:text-[#55E5A4] text-[#26313F]"
+                  className="text-4xl dark:text-[#4FC3F7] text-[#26313F]"
                   onClick={toggleNav}
                 />
               )}
@@ -138,7 +138,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div
               className={
                 isOpen
-                  ? "sm:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center text-center  w-full h-screen bg-[#000]/85 text-[#55E5A4] duration-300 ease-in-out"
+                  ? "sm:hidden absolute top-0 right-0 left-0 bottom-0 flex justify-center items-center text-center  w-full h-screen bg-[#000]/85 text-[#C1C1C1] duration-300 ease-in-out"
                   : "sm:hidden absolute top-0 right-0 left-[-100%] bottom-0 flex justify-center items-center text-center w-full h-screen  bg-[#000]/85 text-white duration-300 ease-in-out"
               }
             >
@@ -150,7 +150,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   duration={1000}
                   onClick={toggleNav}
                 >
-                  <li className="p-4">Home</li>
+                  <li className="p-4  text-[#4FC3F7]">Home</li>
                 </Link>
                 <Link
                   to="/about"
@@ -179,7 +179,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   duration={1000}
                   onClick={toggleNav}
                 >
-                  <li className="p-4">Resume</li>
+                  <li className="p-4 ">Resume</li>
                 </Link>
 
                 <Link
@@ -189,7 +189,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   duration={1000}
                   onClick={toggleNav}
                 >
-                  <li className="p-4 text-white">Contact</li>
+                  <li className="p-4">Contact</li>
                 </Link>
               </ul>
             </div>
