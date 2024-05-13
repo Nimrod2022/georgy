@@ -173,6 +173,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 </Link>
 
                 <Link
+                  to="/resume"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  onClick={toggleNav}
+                >
+                  <li className="p-4">Resume</li>
+                </Link>
+
+                <Link
                   to="/contact"
                   spy={true}
                   smooth={true}
