@@ -136,3 +136,17 @@ opacity: 0px;
     border: width 1px;
     
   }
+
+  select {
+    /* Hide the default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* Add a custom arrow */
+    background-image: url('/assets/drop-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 0.5em center; /* Adjust the position */
+    padding-right: 2em; /* Adjust based on your icon's width */
+  }
+  
