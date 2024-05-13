@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
     <Services darkMode={darkMode} setDarkMode={toggleDarkMode} />
     <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
+    <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
     
     </>
   )
