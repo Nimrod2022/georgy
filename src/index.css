@@ -16,9 +16,49 @@
     font-family: 'Oleo Script';
   }
 
+
+.name{
+/* font-family: Poppins;
+font-size: 63px;
+font-weight: 700;
+line-height: 94.5px;
+letter-spacing: -0.06em;
+text-align: left; */
+
+}
+
+.intro{
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+
+}
+
+
+.titleDark {
+    font-family: Poppins;
+    
+    font-weight: 600;
+    line-height: 39px;
+    text-align: left;
+    background: linear-gradient(90.54deg, #4FC3F7 0.46%, #FFFFFF 91.25%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
   
+  .title {
+    font-family: Poppins;
+    
+    font-weight: 600;
+    line-height: 39px;
+    text-align: left;
+    background: linear-gradient(90.54deg, #4FC3F7 0.46%, #484E53 91.25%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 
 
-
-
-  

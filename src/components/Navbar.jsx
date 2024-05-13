@@ -6,7 +6,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { BiMenuAltRight } from "react-icons/bi";
 
 const darkIcon = "/assets/dark-theme-icon.svg";
-const lightIcon = "/assets/light-theme-icon.png";
+const lightIcon = "/assets/light-theme-icon.svg";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   //  Sticky nav handling

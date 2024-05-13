@@ -2,41 +2,41 @@ const darkHomeProfile = "/assets/home-profile-dark.png";
 
 const lightHomeProfile = "/assets/home-profile-light.png";
 
+const landingDark = "/assets/landing-bg-dark.svg";
+const profile = "/assets/profile.png";
+
 const Home = ({ darkMode, scrollToContact }) => {
   return (
     <>
       <div id="/#" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6]  h-screen poppins pt-32 md:pt-0 pb-10 flex flex-col justify-center bg-">
-          <div className="px-8   text-white md:flex md:gap-5 md:justify-center ">
-            <div className="items-center   md:w-[40%] ">
-              <p className="text-2xl text-[#26313F] dark:text-white md:text-start text-center ">
-                Nimrod Kibet
+        <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-16 pt-20 md:h-screen poppins flex flex-col justify-center bg-no-repeat  bg-center bg-[url('/assets/landing-bg-light.svg')] dark:bg-[url('/assets/landing-bg-dark.svg')]">
+          <div className="px-5   text-white md:flex md:gap-5 md:justify-center  ">
+            <div className="items-center flex flex-col   md:w-[50%] ">
+              <img
+                className="rounded-full h-56"
+                src={profile}
+                alt="profile "
+              />
+              <p className="text-3xl md:text-5xl font-bold md:py-2 md:pt-5 pt-3 text-[#484E53] name dark:text-white md:text-start text-center ">
+                George Mururi
               </p>
-              <h1 className="  text-[#55E5A4] pt-2 font-extrabold text-2xl md:text-3xl md:text-start text-center">
-                Frontend & GIS Developer
+              <h1 className="md:py-3 py-3 font-extrabold text-2xl md:text-3xl md:text-start text-center">
+              <span className="dark:titleDark title">Data Sorcerer</span> 🧙🏽
               </h1>
-              <p className="  text-lg text-[#686565] dark:text-[#A9A9A9] pt-3 md:text-start text-center ">
-                I specialize in crafting immersive user experiences using the
-                latest frontend technologies and frameworks to bring your vision
-                to life. Additionally, my expertise extends to geoinformatics,
-                where I excel in harnessing the power of spatial data to uncover
-                actionable insights.
+              <p className="w-full text-xs text-[#484E53] intro dark:text-[#E1E1E1]  text-center ">
+                As a passionate data scientist, with expertise in machine
+                learning, AI, and data analytics, I thrive on the challenges of
+                exploring complex data landscapes and uncovering meaningful
+                patterns that drive innovation.
               </p>
-              <div className="items-center flex pt-8 md:pt-5 ">
+              <div className="justify-center  pt-8 md:pt-20 ">
                 <button
                   onClick={scrollToContact}
                   type="button"
-                  className="bg-[#26313F] dark:bg-[#55E5A4] text-#FAFAFA dark:text-black hover:bg-[#00142D] dark:hover:bg-[#00A359] font-semibold text-md rounded-lg px-2 py-2 mr-8"
+                  className=" text-[#484E53] dark:text-white border-[#484E53] dark:border-[#4FC3F7] border montserrat font-semibold text-md rounded-3xl px-10 py-3 mr-8"
                 >
-                  Get in Touch
+                  Contact me
                 </button>
-
-                <div className="flex items-center">
-                  <div className="circle"></div>
-                  <p className="text-center text-[#686565] dark:text-[#A9A9A9] ml-3">
-                    Available for work
-                  </p>
-                </div>
               </div>
             </div>
 
