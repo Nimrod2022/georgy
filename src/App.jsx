@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Home from './components/Home'
 import Navbar from './components/Navbar'
 import About from './components/About';
+import Services from './components/Services';
 function App() {
 
   const [darkMode, setDarkMode] = useState(true);
@@ -18,6 +19,7 @@ function App() {
 
     <Home darkMode={darkMode} setDarkMode={toggleDarkMode}/>
     <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
+    <Services darkMode={darkMode} setDarkMode={toggleDarkMode} />
     
     </>
   )

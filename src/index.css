@@ -96,3 +96,17 @@ text-align: left; */
 
 }
 
+.service-box{
+width: 325px;
+height: 325px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.chatbotbox{
+width: 690px;
+height: 325px;
+gap: 0px;
+opacity: 0px;
+}

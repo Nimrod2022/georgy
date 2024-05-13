@@ -9,7 +9,7 @@ const About = ({ darkMode }) => {
           {/* Image */}
 
           {/* Text */}
-          <div className="">
+          <div >
             <h1 className="text-3xl pt-10 md:pt-0 text-center md:text-center font-extrabold text-[#000000] dark:text-white">
               About Me
             </h1>
