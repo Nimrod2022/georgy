@@ -129,3 +129,10 @@ opacity: 0px;
         animation-name: fadeInDown;
         animation-timing-function: ease-out;
       }
+
+
+.contact-border {
+  
+    border: width 1px;
+    
+  }
