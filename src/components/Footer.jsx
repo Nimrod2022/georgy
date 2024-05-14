@@ -18,7 +18,7 @@ const Footer = ({ darkMode }) => {
     <>
       <section className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] ">
-          <div className="flex justify-between items-center md:py-16 md:px-32">
+          <div className="flex justify-between items-center md:py-16 px-5 md:px-36 ">
             <div className="items-center ">
               <h1 className="md:text-5xl dark:text-[#DEDEDE] text-[#282938]">
                 Let’s{" "}

@@ -113,12 +113,12 @@ const Contact = ({ darkMode }) => {
           <h1 className=" text-[#484E53] dark:text-white text-2xl md:text-3xl font-bold">
             Get in Touch
           </h1>
-          <h3 className="title">Some of my Work</h3>
+          <h3 className="title">Let's work together</h3>
           <div className=" md:flex rounded-xl    md:w-auto w-[75%]  md:px-0 px-3 ">
             
               <form
                 action="#"
-                className="md:space-y-4 space-y-3 z-50 dark:text-white text-[#282938] pt-5"
+                className="md:space-y-4 space-y-3 dark:text-white text-[#282938] pt-5"
                 onSubmit={sendEmail}
               >
                 <div className="flex  flex-col">

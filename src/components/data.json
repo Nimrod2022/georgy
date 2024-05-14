@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Machine Learning",
+      "category": "powerBI",
+      "image": "/assets/project-tile.svg",
+      "description": "Data science and AI",
+      "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
+      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "isNew": true
+      
+    },
+    {
+      "title": "Machine Learning",
+      "category": "ML",
+      "image": "/assets/project-tile.svg",
+      "description": "Data science and AI",
+      "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
+      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "isNew": true
+      
+    },
+    {
+      "title": "Machine Learning",
+      "category": "sql",
+      "image": "/assets/project-tile.svg",
+      "description": "Data science and AII",
+      "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
+      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "isNew": true
+    },
+    
+    {
+      "title": "Machine Learning",
+      "category": "AI-LLMS",
+      "image": "/assets/project-tile.svg",
+      "description": "Data science and AI",
+      "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
+      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "isNew": true
+    },
+    {
+      "title": "Machine Learning",
+      "category": "spatial",
+      "image": "/assets/project-tile.svg",
+      "description": "Data science and AI",
+      "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
+      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "isNew": true
+    }
+  ]
+  

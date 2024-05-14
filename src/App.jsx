@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <Home darkMode={darkMode} setDarkMode={toggleDarkMode}/>
     <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
     <Services darkMode={darkMode} setDarkMode={toggleDarkMode} />
+    <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
     <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
     <Footer darkMode={darkMode} setDarkMode={setDarkMode} />
     
