@@ -83,7 +83,17 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/resume" smooth={true} duration={1000}>
+                  <Link to="/services" smooth={true} duration={1000}>
+                    <button
+                      type="button"
+                      className="   text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
+                    >
+                      Services
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" smooth={true} duration={1000}>
                     <button
                       type="button"
                       className="   text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "

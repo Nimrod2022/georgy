@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import data from "./data.json";
 import ProjectsDiv from "./ProjectsDiv";
 
-
 const Projects = ({ darkMode }) => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [filteredProjects, setFilteredProjects] = useState(data);
@@ -34,7 +33,6 @@ const Projects = ({ darkMode }) => {
     window.open(siteurl, "_blank");
   };
 
-
   return (
     <section className={darkMode ? "dark" : ""}>
       <div className=" dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-32 pt-20 px-5 md:px-36">
@@ -44,7 +42,10 @@ const Projects = ({ darkMode }) => {
         >
           Projects
         </h1>
-        <div className="flex md:text-md gap-x-5 justify-center mt-10 ">
+        <h3 className="dark:about-text-dark about-text-light font-bold text-md text-center">
+          Some of my work
+        </h3>
+        <div className="flex md:text-md gap-x-5 md:justify-center mt-10 ">
           {/* Filter buttons */}
           {/* Filter buttons */}
           <button
@@ -65,7 +66,7 @@ const Projects = ({ darkMode }) => {
             }`}
             onClick={() => filterProjects("ML")}
           >
-            Machine  learning
+            Machine learning
           </button>
           <button
             className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
@@ -124,7 +125,7 @@ const Projects = ({ darkMode }) => {
               siteurl={project.siteurl}
               videourl={project.videourl}
               darkMode={darkMode}
-              handleModal={() => handleModal(project.videourl)} 
+              handleModal={() => handleModal(project.videourl)}
               handleVisitSite={handleVisitSite}
               isNew={index < 2 && project.isNew}
             />

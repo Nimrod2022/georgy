@@ -15,13 +15,19 @@ function App() {
     setDarkMode(!darkMode);
   };
 
-  
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("/contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
 
   return (
     <>
     <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode}/>
 
-    <Home darkMode={darkMode} setDarkMode={toggleDarkMode}/>
+    <Home darkMode={darkMode} scrollToContact={scrollToContact} setDarkMode={toggleDarkMode}/>
     <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
     <Services darkMode={darkMode} setDarkMode={toggleDarkMode} />
     <Projects darkMode={darkMode} setDarkMode={setDarkMode} />
