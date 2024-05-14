@@ -31,7 +31,7 @@
     
     {
       "title": "Machine Learning",
-      "category": "AI-LLMS",
+      "category": "AI/LLMS",
       "image": "/assets/project-tile.svg",
       "description": "Data science and AI",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],

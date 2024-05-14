@@ -44,11 +44,11 @@ const Projects = ({ darkMode }) => {
         >
           Projects
         </h1>
-        <div className="flex md:text-xl gap-x-5 justify-center mt-10 ">
+        <div className="flex md:text-md gap-x-5 justify-center mt-10 ">
           {/* Filter buttons */}
           {/* Filter buttons */}
           <button
-            className={`mr-4 project-border hidden md:block   px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
+            className={`mr-4 project-border border hidden md:block rounded-2xl  px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]   ${
               activeCategory === "all"
                 ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
                 : "dark:text-white"
@@ -58,24 +58,57 @@ const Projects = ({ darkMode }) => {
             All Projects
           </button>
           <button
-            className={`md:mr-4 project-border px-5     md:px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  ${
-              activeCategory === "frontend"
+            className={`md:mr-4 project-border px-5 border rounded-2xl   md:px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
+              activeCategory === "ML"
                 ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
                 : "dark:text-white"
             }`}
-            onClick={() => filterProjects("frontend")}
+            onClick={() => filterProjects("ML")}
           >
-            Front-end
+            Machine  learning
           </button>
           <button
-            className={`project-border     px-6 py-2 dark:border-[#55e5a4] border-[#26313F] ${
-              activeCategory === "geoinformatics"
+            className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
+              activeCategory === "powerBI"
                 ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
                 : "dark:text-white"
             }`}
-            onClick={() => filterProjects("geoinformatics")}
+            onClick={() => filterProjects("powerBI")}
           >
-            Geoinformatics
+            Power BI
+          </button>
+
+          <button
+            className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
+              activeCategory === "sql"
+                ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
+                : "dark:text-white"
+            }`}
+            onClick={() => filterProjects("sql")}
+          >
+            SQL
+          </button>
+
+          <button
+            className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
+              activeCategory === "AI/LLMS"
+                ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
+                : "dark:text-white"
+            }`}
+            onClick={() => filterProjects("AI/LLMS")}
+          >
+            AI/LLMS
+          </button>
+
+          <button
+            className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
+              activeCategory === "spatial"
+                ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
+                : "dark:text-white"
+            }`}
+            onClick={() => filterProjects("spatial")}
+          >
+            Spatial data science
           </button>
         </div>
         <div className="satoshi flex gap-10 flex-wrap md:py-20 justify-center dark:bg-[#1A1A1A] bg-[#E0E8F6] pt-20">
