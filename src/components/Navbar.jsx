@@ -53,7 +53,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div className="flex gap-10 montserrat">
               <ul className="flex dark:text-[#C1C1C1] text-[#050505]">
                 <li>
-                  <Link to="/home" smooth={true} duration={1000}>
+                  <Link to="/#" smooth={true} duration={1000}>
                     <button
                       type="button"
                       className=" text-[#4FC3F7] text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
@@ -177,6 +177,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   onClick={toggleNav}
                 >
                   <li className="p-4">Projects</li>
+                </Link>
+
+                <Link
+                  to="/services"
+                  spy={true}
+                  smooth={true}
+                  duration={1000}
+                  onClick={toggleNav}
+                >
+                  <li className="p-4 ">Services</li>
                 </Link>
 
                 <Link
