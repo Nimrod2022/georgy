@@ -18,7 +18,7 @@ const Footer = ({ darkMode }) => {
   return (
     <>
       <section className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-p pt-20 ">
+        <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-0 pt-20 ">
           <div className="flex justify-between items-center md:py-16 px-5 md:px-36 ">
             <div className="items-center ">
               <h1 className="md:text-5xl text-md dark:text-[#DEDEDE] text-[#282938]">
@@ -50,7 +50,7 @@ const Footer = ({ darkMode }) => {
             </div>
           </div>
           <hr className="border border-[#A9A9A9] dark:border-[#484E53] md:mt-0 mt-3 w-full" />
-          <div className="flex flex-col items-center pt-5 md:flex-row md:justify-between md:py-5 md:items-center md:px-32">
+          <div className="flex flex-col items-center pt-5 md:flex-row md:justify-between md:py-5 md:items-center md:px-36">
             <p className="text-[#282938] dark:text-[#A9A9A9] text-xs md:text-sm">
               © 2024 Nimrod Kibet. All Rights Reserved
             </p>
