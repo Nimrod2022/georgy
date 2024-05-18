@@ -108,7 +108,7 @@ const Contact = ({ darkMode }) => {
       <section className={`${darkMode ? "dark" : ""}`}>
         <div
           id="/contact"
-          className="inter dark:bg-[#1A1A1A] bg-[#E0E8F6] h-screen flex flex-col justify-center items-center relative pt-10 md:pt-10"
+          className="inter dark:bg-[#1A1A1A] bg-[#E0E8F6] h-screen flex flex-col justify-center items-center relative pt-40 md:pt-10"
         >
           <h1 className=" text-[#484E53] dark:text-white text-2xl md:text-3xl font-bold">
             Get in Touch

@@ -52,7 +52,7 @@ const Footer = ({ darkMode }) => {
           <hr className="border border-[#A9A9A9] dark:border-[#484E53] md:mt-0 mt-3 w-full" />
           <div className="flex flex-col items-center pt-5 md:flex-row md:justify-between md:py-5 md:items-center md:px-36">
             <p className="text-[#282938] dark:text-[#A9A9A9] text-xs md:text-sm">
-              © 2024 Nimrod Kibet. All Rights Reserved
+              © 2024 George Mururi. All Rights Reserved
             </p>
 
             <div className="flex gap-3 px-2 pt-3 pb-3 md:pt-0">
