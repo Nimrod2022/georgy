@@ -10,7 +10,7 @@ const Services = ({ darkMode }) => {
     <>
       <div id="/services" className={darkMode ? "dark" : ""}>
         <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] ">
-          <h1 className="text-3xl pt-10 md:pt-0 text-center md:text-center font-extrabold text-[#000000] dark:text-white">
+          <h1 className="text-3xl pt-10 md:pt-auto text-center md:text-center font-extrabold text-[#000000] dark:text-white">
             What I do
           </h1>
           <h3 className="dark:about-text-dark about-text-light font-bold text-md text-center">
