@@ -1,41 +1,47 @@
-// Projects.jsx
-
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import data from "./data.json";
 import ProjectsDiv from "./ProjectsDiv";
 
 const Projects = ({ darkMode }) => {
-  const [activeCategory, setActiveCategory] = useState("all");
-  const [filteredProjects, setFilteredProjects] = useState(data);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedVideoUrl, setSelectedVideoUrl] = useState("");
+  const allCategories = ["All Projects", "Machine Learning", "Power BI", "SQL", "AI/LLMS", "Spatial Data Science"];
+  const [activeCategories, setActiveCategories] = useState(["All Projects"]);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const filterProjects = (category) => {
-    setActiveCategory(category);
-    if (category === "all") {
-      setFilteredProjects(data);
-    } else {
-      const filtered = data.filter((project) => project.category === category);
-      setFilteredProjects(filtered);
+  useEffect(() => {
+    if (activeCategories.length === 0) {
+      setActiveCategories(["All Projects"]);
     }
-  };
+  }, [activeCategories]);
 
-  const handleModal = (videourl) => {
-    setSelectedVideoUrl(videourl);
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
+  const toggleCategory = (category) => {
+    if (category === "All Projects") {
+      setActiveCategories(["All Projects"]);
+    } else {
+      if (activeCategories.includes("All Projects")) {
+        setActiveCategories([category]);
+      } else {
+        const index = activeCategories.indexOf(category);
+        if (index === -1) {
+          setActiveCategories([...activeCategories, category]);
+        } else {
+          setActiveCategories(activeCategories.filter((cat) => cat !== category));
+        }
+      }
+    }
   };
 
   const handleVisitSite = (siteurl) => {
     window.open(siteurl, "_blank");
   };
 
+  const filterProjectByCategories = (project) => {
+    if (activeCategories.includes("All Projects")) return true;
+    return activeCategories.includes(project.category);
+  };
+
   return (
     <section className={darkMode ? "dark" : ""}>
-      <div className=" dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-32 pt-20 px-5 md:px-36">
+      <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-32 pt-20 px-5 md:px-36">
         <h1
           id="/projects"
           className="text-center text-[#151C25] dark:text-white text-4xl"
@@ -45,98 +51,73 @@ const Projects = ({ darkMode }) => {
         <h3 className="dark:about-text-dark about-text-light font-bold text-md text-center">
           Some of my work
         </h3>
-        <div className="flex md:text-md gap-x-5 md:justify-center mt-10 ">
-          {/* Filter buttons */}
-          {/* Filter buttons */}
-          <button
-            className={`mr-4 project-border border hidden md:block rounded-2xl  px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]   ${
-              activeCategory === "all"
-                ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("all")}
-          >
-            All Projects
-          </button>
-          <button
-            className={`md:mr-4 project-border px-5 border rounded-2xl   md:px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
-              activeCategory === "ML"
-                ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("ML")}
-          >
-            Machine learning
-          </button>
-          <button
-            className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
-              activeCategory === "powerBI"
-                ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("powerBI")}
-          >
-            Power BI
-          </button>
+        
+        <div className="flex md:text-md gap-x-5 md:justify-center mt-10">
+          {/* Filter buttons for larger screens */}
+          <div className="hidden md:flex gap-x-5">
+            {allCategories.map((category) => (
+              <button
+                key={category}
+                className={`mr-4 project-border border rounded-2xl px-6 py-2 border-[#484E53] dark:border-[#4FC3F7] ${
+                  activeCategories.includes(category)
+                    ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
+                    : "dark:text-white"
+                }`}
+                onClick={() => toggleCategory(category)}
+              >
+                {category === "AI/LLMS" ? "AI/LLMS" : category}
+              </button>
+            ))}
+          </div>
 
-          <button
-            className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
-              activeCategory === "sql"
-                ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("sql")}
-          >
-            SQL
-          </button>
-
-          <button
-            className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
-              activeCategory === "AI/LLMS"
-                ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("AI/LLMS")}
-          >
-            AI/LLMS
-          </button>
-
-          <button
-            className={`project-border  border rounded-2xl   px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]  ${
-              activeCategory === "spatial"
-                ? " active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
-                : "dark:text-white"
-            }`}
-            onClick={() => filterProjects("spatial")}
-          >
-            Spatial data science
-          </button>
+          {/* Dropdown for smaller screens */}
+          <div className="md:hidden w-full ">
+            <button
+              className="border rounded-2xl w-full px-6 py-2 border-[#484E53] dark:border-[#4FC3F7] dark:text-white"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            >
+              {dropdownOpen ? 'Close Menu' : 'Filter Projects'}
+            </button>
+            {dropdownOpen && (
+              <div className="mt-2 flex flex-col gap-y-2">
+                {allCategories.map((category) => (
+                  <button
+                    key={category}
+                    className={`project-border border rounded-2xl px-6 py-2 border-[#484E53] dark:border-[#4FC3F7] ${
+                      activeCategories.includes(category)
+                        ? "active dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]"
+                        : "dark:text-white"
+                    }`}
+                    onClick={() => toggleCategory(category)}
+                  >
+                    {category === "AI/LLMS" ? "AI/LLMS" : category}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
+
         <div className="satoshi flex gap-10 flex-wrap md:py-20 justify-center dark:bg-[#1A1A1A] bg-[#E0E8F6] pt-20">
           {/* Render filtered projects */}
-          {filteredProjects.map((project, index) => (
-            <ProjectsDiv
-              key={index}
-              title={project.title}
-              category={project.category}
-              image={project.image}
-              description={project.description}
-              technologies={project.technologies}
-              siteurl={project.siteurl}
-              videourl={project.videourl}
-              darkMode={darkMode}
-              handleModal={() => handleModal(project.videourl)}
-              handleVisitSite={handleVisitSite}
-              isNew={index < 2 && project.isNew}
-            />
-          ))}
+          {data
+            .filter(filterProjectByCategories)
+            .map((project, index) => (
+              <ProjectsDiv
+                key={index}
+                title={project.title}
+                category={project.category}
+                image={project.image}
+                description={project.description}
+                technologies={project.technologies}
+                siteurl={project.siteurl}
+                darkMode={darkMode}
+                handleModal={() => handleModal(project.videourl)}
+                handleVisitSite={handleVisitSite}
+                isNew={index < 2 && project.isNew}
+              />
+            ))}
         </div>
-
-        {/* <div className=" justify-center md:pt-0 pt-8 pb-3 md:pb-0 items-center flex flex-col">
-          <button className="mr-4 project-border  md:text-xl px-3 md:px-6 py-2 dark:border-[#55e5a4] border-[#26313F]  hover:border-none hover:bg-[#00142D] dark:hover:bg-[#00A359]  dark:bg-[#55e5a4] bg-[#151C25] dark:text-[#000000] text-[#FFFFFF]">
-            View all Projects
-          </button>
-        </div> */}
       </div>
     </section>
   );

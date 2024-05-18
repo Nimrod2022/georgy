@@ -1,7 +1,7 @@
 [
     {
       "title": "Machine Learning",
-      "category": "powerBI",
+      "category": "Power BI",
       "image": "/assets/project-tile.svg",
       "description": "Data science and AI",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
@@ -11,7 +11,7 @@
     },
     {
       "title": "Machine Learning",
-      "category": "ML",
+      "category": "Machine Learning",
       "image": "/assets/project-tile.svg",
       "description": "Data science and AI",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
@@ -21,7 +21,7 @@
     },
     {
       "title": "Machine Learning",
-      "category": "sql",
+      "category": "SQL",
       "image": "/assets/project-tile.svg",
       "description": "Data science and AII",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
@@ -40,7 +40,7 @@
     },
     {
       "title": "Machine Learning",
-      "category": "spatial",
+      "category": "Spatial Data Science",
       "image": "/assets/project-tile.svg",
       "description": "Data science and AI",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],

@@ -25,7 +25,7 @@ const Home = ({ darkMode, scrollToContact }) => {
                 exploring complex data landscapes and uncovering meaningful
                 patterns that drive innovation.
               </p>
-              <div className="justify-center  pt-8 md:pt-20 ">
+              <div className="justify-center  pt-8 md:pt-16 ">
                 <button
                   onClick={scrollToContact}
                   type="button"
