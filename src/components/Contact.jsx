@@ -167,7 +167,7 @@ const Contact = ({ darkMode }) => {
                     id="interest"
                     value={interest}
                     onChange={(e) => setInterest(e.target.value)}
-                    className="dark:border-[#D6DDED] border-[#484E53]  border dark:bg-[#1A1A1A] bg-[#E0E8F6] rounded-lg p-3 "
+                    className="dark:border-[#D6DDED] border-[#484E53] text-sm border dark:bg-[#1A1A1A] bg-[#E0E8F6] rounded-lg p-3 "
                   >
                     <option value="Data Analytics & Visualization">Data Analytics & Visualization</option>
                     <option value="Predictive Analytics and Forecasting">Predictive Analytics and Forecasting</option>
