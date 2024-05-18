@@ -109,7 +109,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               <Link to="/contact" smooth={true} duration={700}>
                 <button
                   type="button"
-                  className="border border-[#484E53] dark:border-[#4FC3F7] text-[#484E53] dark:text-white  text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 "
+                  className="border border-[#484E53] dark:border-[#4FC3F7] text-[#484E53] dark:text-white  text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 hover:bg-[#484E53] hover:text-[#4FC3F7] dark:hover:bg-[#4FC3F7] "
                 >
                   Contact
                 </button>

@@ -29,7 +29,7 @@ const Home = ({ darkMode, scrollToContact }) => {
                 <button
                   onClick={scrollToContact}
                   type="button"
-                  className=" text-[#484E53] dark:text-white border-[#484E53] dark:border-[#4FC3F7] border montserrat font-semibold text-md rounded-3xl px-10 py-3 mr-8"
+                  className=" text-[#484E53] dark:text-white border-[#484E53] dark:border-[#4FC3F7] border montserrat font-semibold text-md rounded-3xl px-10 py-3 mr-8 dark:hover:bg-[#4FC3F7] hover:bg-[#484E53] hover:text-[#4FC3F7]"
                 >
                   Contact me
                 </button>

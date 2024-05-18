@@ -15,7 +15,7 @@ const ProjectsDiv = ({
   return (
     <div className="relative md:h-[340px] md:w-[354.67px] w-[336px] h-[294.33px] inter md:px-0 px-4 rounded-xl overflow-hidden  md:my-5 hover:scale-105 transition-transform duration-300 ease-in-out">
       {isNew && (
-        <div className="absolute top-4 left-6 md:top-3 text-md md:left-5 font-semibold bg-red-500 text-white px-2 py-2 md:px-3 md:py-2 rounded-lg ">
+        <div className="absolute top-4 left-6 md:top-3 text-md md:left-5 font-semibold bg-[#4FC3F7] text-white px-2 py-2 md:px-3 md:py-2 rounded-lg ">
           New
         </div>
       )}
@@ -41,11 +41,10 @@ const ProjectsDiv = ({
           </div>
           <div>
             <button type="button" onClick={() => handleVisitSite(siteurl)}>
-              <img src="/assets/send.svg" alt="open" className=""/>
+              <img src="/assets/send.svg" alt="open" className="" />
             </button>
           </div>
         </div>
-      
       </div>
     </div>
   );
