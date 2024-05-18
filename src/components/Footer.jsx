@@ -57,7 +57,7 @@ const Footer = ({ darkMode }) => {
 
             <div className="flex gap-3 px-2 pt-3 pb-3 md:pt-0">
               <a
-                href="https://www.linkedin.com/in/nimrod-kibet-b6b340115/"
+                href="www.linkedin.com/in/george-mururi"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -105,7 +105,7 @@ const Footer = ({ darkMode }) => {
               </a>
 
               <a
-                href="https://twitter.com/MandelaGI?t=ejgoi2MMFnyuNXcdNoMXtA&s=09"
+                href="https://twitter.com/mururi_G"
                 target="_blank"
                 rel="noopener noreferrer"
               >
