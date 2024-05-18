@@ -5,7 +5,7 @@
       "image": "/assets/project-tile.svg",
       "description": "Data science and AI",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
-      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "siteurl": "https://github.com/",
       "isNew": true
       
     },
@@ -15,8 +15,8 @@
       "image": "/assets/project-tile.svg",
       "description": "Data science and AI",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
-      "siteurl": "https://github.com/AdianDawuda/FlightMap",
-      "isNew": true
+      "siteurl": "https://github.com/",
+      "isNew": false
       
     },
     {
@@ -25,7 +25,7 @@
       "image": "/assets/project-tile.svg",
       "description": "Data science and AII",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
-      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "siteurl": "https://github.com/",
       "isNew": true
     },
     
@@ -35,7 +35,7 @@
       "image": "/assets/project-tile.svg",
       "description": "Data science and AI",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
-      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "siteurl": "https://github.com/",
       "isNew": true
     },
     {
@@ -44,7 +44,7 @@
       "image": "/assets/project-tile.svg",
       "description": "Data science and AI",
       "technologies": ["/assets/pytorch.png", "/assets/tensorflow.png", "/assets/pytorch.png", "/assets/tensorflow.png"],
-      "siteurl": "https://github.com/AdianDawuda/FlightMap",
+      "siteurl": "https://github.com/",
       "isNew": true
     }
   ]
