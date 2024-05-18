@@ -114,7 +114,7 @@ const Contact = ({ darkMode }) => {
             Get in Touch
           </h1>
           <h3 className="title">Let's work together</h3>
-          <div className=" md:flex rounded-xl    md:w-auto w-[75%]  md:px-0 px-3 ">
+          <div className=" md:flex rounded-xl w-[90%]    md:w-auto w-[75%]  md:px-0 px-3 ">
             
               <form
                 action="#"
@@ -169,8 +169,11 @@ const Contact = ({ darkMode }) => {
                     onChange={(e) => setInterest(e.target.value)}
                     className="dark:border-[#D6DDED] border-[#484E53]  border dark:bg-[#1A1A1A] bg-[#E0E8F6] rounded-lg p-3 "
                   >
-                    <option value="Frontend">Frontend</option>
-                    <option value="Geoinformatics">Geoinformatics</option>
+                    <option value="Data Analytics & Visualization">Data Analytics & Visualization</option>
+                    <option value="Predictive Analytics and Forecasting">Predictive Analytics and Forecasting</option>
+                    <option value="Natural Language Processing">Natural Language Processing</option>
+                    <option value="AI Chatbots">AI Chatbots</option>
+                    <option value="Machine Learning">Machine Learning</option>
                   </select>
                 </div>
 
