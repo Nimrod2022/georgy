@@ -50,7 +50,7 @@ const Projects = ({ darkMode }) => {
 
   return (
     <section className={darkMode ? "dark" : ""}>
-      <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-32 pt-20 px-5 md:px-36">
+      <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-32 pt-20 px-5 md:px-0 ">
         <h1
           id="/projects"
           className="text-center text-[#151C25] dark:text-white text-4xl"
@@ -107,24 +107,27 @@ const Projects = ({ darkMode }) => {
           </div>
         </div>
 
-        <div className="satoshi flex gap-10 flex-wrap md:py-20 justify-center dark:bg-[#1A1A1A] bg-[#E0E8F6] pt-20">
-          {/* Render filtered projects */}
-          {data.filter(filterProjectByCategories).map((project, index) => (
-            <ProjectsDiv
-              key={index}
-              title={project.title}
-              category={project.category}
-              image={project.image}
-              description={project.description}
-              technologies={project.technologies}
-              siteurl={project.siteurl}
-              darkMode={darkMode}
-              handleModal={() => handleModal(project.videourl)}
-              handleVisitSite={handleVisitSite}
-              isNew={index < 2 && project.isNew}
-            />
-          ))}
-        </div>
+        <div className="flex justify-center">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 md:py-20 dark:bg-[#1A1A1A] bg-[#E0E8F6] pt-20">
+    {/* Render filtered projects */}
+    {data.filter(filterProjectByCategories).map((project, index) => (
+      <ProjectsDiv
+        key={index}
+        title={project.title}
+        category={project.category}
+        image={project.image}
+        description={project.description}
+        technologies={project.technologies}
+        siteurl={project.siteurl}
+        darkMode={darkMode}
+        handleModal={() => handleModal(project.videourl)}
+        handleVisitSite={handleVisitSite}
+        isNew={index < 2 && project.isNew}
+      />
+    ))}
+  </div>
+</div>
+
       </div>
     </section>
   );
