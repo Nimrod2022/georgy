@@ -8,17 +8,25 @@ Access site at [George portfolio](https://georgy-nine.vercel.app/)
 ## Table of Content:
 
 - [About](#about)
+- [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [Status](#status)
 - [Credits](#credits)
-- [Screenshots](#screenshots)
+
 
 <!-- - [Approach](#approach) -->
 <!-- - [License](#license) -->
 ## About
 
 Georgy portfolio website helps him to showcase his projects and learning journey in data science and AI.
+
+## Screenshots
+
+
+<img src="https://drive.google.com/uc?export=view&id=1X5Etk4wyqj52szKVOoqxXaqmTxSHztKi" alt="Alt Text" width="45%" height="50%">   <img src="https://drive.google.com/uc?export=view&id=1cO3LT1ZFwZ_nJ9fTICqP_y71047whtop" alt="Alt Text" width="45%" height="50%">
+
+<img src="https://drive.google.com/uc?export=view&id=1b9C5c4DAkl0syyAooR2Cetc4yIXrMAQm" alt="Alt Text" width="45%" height="50%">  <img src="https://drive.google.com/uc?export=view&id=13FrR1hmS_QVyAqNP9SbIVrHFsLaT3ikK" alt="Alt Text" width="45%" height="50%">
 
 
 ## Technologies
@@ -44,19 +52,18 @@ List of contriubutors:
 
 
 
-## License
+<!-- ## License
 
 MIT license @ [author](author.com)
 
-
-## Screenshots
-
-
-<img src="https://drive.google.com/uc?export=view&id=1X5Etk4wyqj52szKVOoqxXaqmTxSHztKi" alt="Alt Text" width="50%" height="50%">
+-->
 
 
 
-Picture by [Nimrod Kibet](https://kibetnimrod.com)
+
+
+
+
 
 
 
