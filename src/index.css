@@ -21,6 +21,22 @@
   }
 
 
+    .nav-link button {
+      color: #050505;
+    }
+
+    .nav-link.active button {
+      color: #4FC3F7;
+    }
+
+    .dark .nav-link button {
+      color: #C1C1C1;
+    }
+
+    .dark .nav-link.active button {
+      color: #4FC3F7;
+    }
+ 
 
 .intro{
     font-family: Poppins;
