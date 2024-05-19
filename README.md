@@ -51,7 +51,7 @@ I adopted the `BEM` naming style for my css class names and ...
 
 ## Credits
 List of contriubutors:
-- [Nimrod Kibet - Developer](kibetnimrod.com)
+- [Nimrod Kibet - Front-End Developer](kibetnimrod.com)
 - [Rodgers Mkolwe - Web Designer](https://dribbble.com/mkolwey)
 
 
