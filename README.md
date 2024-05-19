@@ -7,7 +7,7 @@
 ## Table of Content:
 
 - [About](#about)
--  [Live link](#Live link)
+-  [Live link](#about)
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
