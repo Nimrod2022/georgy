@@ -79,7 +79,7 @@ const Projects = ({ darkMode }) => {
             ))}
           </div>
 
-          {/* Dropdown for smaller screens */}
+          {/* Dropdown for sm screens */}
           <div className="md:hidden w-full flex flex-col items-center">
             <button
               className="border rounded-2xl w-2/3 md:w-full px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]   dark:text-white"

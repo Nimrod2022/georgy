@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 
 const facebookDark = "/assets/facebook-dark.svg";
 const facebook = "/assets/facebook-light.svg";
@@ -68,18 +67,7 @@ const Footer = ({ darkMode }) => {
                 />
               </a>
 
-              {/* <a
-                href="https://github.com/Nimrod2022"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={darkMode ? githubDark : github}
-                  alt="github"
-                  className="size-20"
-                />
-              </a> */}
-
+            
               <a
                 href="https://facebook.com/"
                 target="_blank"

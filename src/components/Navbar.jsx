@@ -19,7 +19,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   };
 
   useEffect(() => {
-    // Update the background color based on the current dark mode
     setBgColor(darkMode ? "#1A1A1A" : "#E0E8F6");
 
     const handleScroll = () => {
