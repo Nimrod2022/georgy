@@ -17,9 +17,9 @@ const Footer = ({ darkMode }) => {
   return (
     <>
       <section className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-0 pt-20 ">
+        <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-0 pt-28 ">
           <div className="flex justify-between items-center md:py-16 px-5 md:px-36 ">
-            <div className="items-center ">
+            <div className="items-center md:pt-0 pt-16  ">
               <h1 className="md:text-5xl text-md dark:text-[#DEDEDE] text-[#282938]">
                 Let’s{" "}
               </h1>
@@ -27,13 +27,13 @@ const Footer = ({ darkMode }) => {
                 Work Together -
               </p>
             </div>
-            <div>
+            <div className="md:pt-0 pt-10">
               <button
                 type="button"
                 onClick={() => {
                   window.location.href = "mailto:mururig@gmail.com";
                 }}
-                className="border border-[#484E53] md:px-8 rounded-lg p-2 md:p-5"
+                className="border border-[#484E53]  md:px-8 rounded-lg p-2 md:p-5"
               >
                 <span className="flex items-center gap-2">
                   <img
