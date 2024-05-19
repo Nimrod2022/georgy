@@ -2,12 +2,12 @@
 
 
 
-## Demo link:
-Access site at [George portfolio](https://georgy-nine.vercel.app/)
+
 
 ## Table of Content:
 
 - [About](#about)
+-  [Live link](#Live link)
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
@@ -20,6 +20,10 @@ Access site at [George portfolio](https://georgy-nine.vercel.app/)
 ## About
 
 Georgy portfolio website helps him to showcase his projects and learning journey in data science and AI.
+
+## Live link
+
+Access site at [George portfolio](https://georgy-nine.vercel.app/)
 
 ## Screenshots
 
