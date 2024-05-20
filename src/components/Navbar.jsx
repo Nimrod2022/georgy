@@ -40,7 +40,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
         >
           <nav className="flex justify-between items-center md:items-center text-lg px-5 md:px-36 md:py-4">
             <div>
-              <Link to="home" smooth={true} duration={700} spy={true}>
+              <Link to="/#" smooth={true} duration={700} spy={true}>
                 <h1 className="oleo text-[#000000] dark:text-white text-xl hover:cursor-pointer md:text-3xl">
                   Georgy
                 </h1>
