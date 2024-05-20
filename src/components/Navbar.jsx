@@ -190,7 +190,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
             >
               <ul onClick={toggleNav}>
                 <Link
-                  to="home"
+                  to="/#"
                   spy={true}
                   smooth={true}
                   duration={1000}
@@ -201,7 +201,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
                   <li className="p-4">Home</li>
                 </Link>
                 <Link
-                  to="about"
+                  to="/about"
                   spy={true}
                   smooth={true}
                   duration={1000}
@@ -212,7 +212,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
                   <li className="p-4">About</li>
                 </Link>
                 <Link
-                  to="projects"
+                  to="/projects"
                   spy={true}
                   smooth={true}
                   duration={1000}
@@ -223,7 +223,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
                   <li className="p-4">Projects</li>
                 </Link>
                 <Link
-                  to="services"
+                  to="/services"
                   spy={true}
                   smooth={true}
                   duration={1000}
@@ -234,7 +234,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
                   <li className="p-4">Services</li>
                 </Link>
                 <Link
-                  to="resume"
+                  to="/resume"
                   spy={true}
                   smooth={true}
                   duration={1000}
@@ -245,7 +245,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
                   <li className="p-4">Resume</li>
                 </Link>
                 <Link
-                  to="contact"
+                  to="/contact"
                   spy={true}
                   smooth={true}
                   duration={1000}
