@@ -9,7 +9,7 @@ const Home = ({ darkMode, scrollToContact }) => {
   return (
     <>
       <div id="/#" className={darkMode ? "dark" : ""}>
-        <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-0 pt-20 md:h-screen poppins flex flex-col justify-center bg-no-repeat  bg-center bg-[url('/assets/landing-bg-light.svg')] dark:bg-[url('/assets/landing-bg-dark.svg')]">
+        <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-0 pt-20 md:h-screen poppins flex flex-col justify-center bg-no-repeat  bg-center bg-[url('/assets/home-bg-light.png')] dark:bg-[url('/assets/home-bg-dark.png')]">
           <div className="px-5   text-white md:flex md:gap-5 md:justify-center  ">
             <div className="items-center flex flex-col   md:w-[50%] ">
               <img className="rounded-full h-56" src={profile} alt="profile " />

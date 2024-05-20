@@ -6,7 +6,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 const darkIcon = "/assets/dark-theme-icon.svg";
 const lightIcon = "/assets/light-theme-icon.svg";
 
-const Navbar = ({ darkMode, setDarkMode }) => {
+const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
   const [scrolled, setScrolled] = useState(false);
   const [bgColor, setBgColor] = useState(darkMode ? "#1A1A1A" : "#E0E8F6");
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
-      if (window.scrollY > 10) setBgColor(darkMode ? "#26313F" : "#ecf5ff");
+      if (window.scrollY > 10) setBgColor(darkMode ? "#484E53" : "#ecf5ff");
       else setBgColor(darkMode ? "#1A1A1A" : "#E0E8F6");
     };
 
@@ -146,6 +146,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 activeClass="active"
               >
                 <button
+                  onClick={scrollToContact}
                   type="button"
                   className="border border-[#484E53] dark:border-[#4FC3F7] text-[#484E53] dark:text-white text-md font-semibold w-24 hidden md:block rounded-md py-1 px-4 hover:bg-[#484E53] hover:text-[#4FC3F7] dark:hover:bg-[#4FC3F7]"
                 >
@@ -259,8 +260,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           </nav>
         </div>
       </header>
-
-     
     </div>
   );
 };

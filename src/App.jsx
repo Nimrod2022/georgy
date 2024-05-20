@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-    <Navbar darkMode={darkMode} setDarkMode={toggleDarkMode}/>
+    <Navbar darkMode={darkMode} scrollToContact={scrollToContact} setDarkMode={toggleDarkMode}/>
 
     <Home darkMode={darkMode} scrollToContact={scrollToContact} setDarkMode={toggleDarkMode}/>
     <About darkMode={darkMode} setDarkMode={toggleDarkMode} />
