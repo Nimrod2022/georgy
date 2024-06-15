@@ -118,7 +118,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
                       </button>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       to="/resume"
                       smooth={true}
@@ -134,7 +134,7 @@ const Navbar = ({ darkMode, setDarkMode, scrollToContact }) => {
                         Resume
                       </button>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 

@@ -51,83 +51,84 @@ const Projects = ({ darkMode }) => {
   return (
     <section className={darkMode ? "dark" : ""}>
       <div className="dark:bg-[#1A1A1A] bg-[#E0E8F6] md:pt-32 pt-20 px-5 md:px-0 ">
-        <h1
-          id="/projects"
-          className="text-center text-[#151C25] dark:text-white text-4xl"
-        >
-          Projects
-        </h1>
-        <h3 className="dark:about-text-dark about-text-light font-bold text-md text-center">
-          Some of my work
-        </h3>
+        <div className="mx-auto md:w-5/6 xl:w-4/6">
+          <h1
+            id="/projects"
+            className="text-center text-[#151C25] dark:text-white text-4xl"
+          >
+            Projects
+          </h1>
+          <h3 className="dark:about-text-dark about-text-light font-bold text-md text-center">
+            Some of my work
+          </h3>
 
-        <div className="flex md:text-md gap-x-5 md:justify-center mt-10">
-          {/* Filter buttons for larger screens */}
-          <div className="hidden md:flex gap-x-5">
-            {allCategories.map((category) => (
+          <div className="flex md:text-md gap-x-5 md:justify-center mt-10">
+            {/* Filter buttons for larger screens */}
+            <div className="hidden md:flex gap-x-5">
+              {allCategories.map((category) => (
+                <button
+                  key={category}
+                  className={`mr-4 project-border border rounded-2xl px-6 py-2 border-[#484E53] dark:border-[#4FC3F7] ${
+                    activeCategories.includes(category)
+                      ? "active dark:bg-[#4FC3F7] bg-[#151C25]  text-[#FFFFFF]"
+                      : "dark:text-white"
+                  }`}
+                  onClick={() => toggleCategory(category)}
+                >
+                  {category === "AI/LLMS" ? "AI/LLMS" : category}
+                </button>
+              ))}
+            </div>
+
+            {/* Dropdown for sm screens */}
+            <div className="md:hidden w-full flex flex-col items-center">
               <button
-                key={category}
-                className={`mr-4 project-border border rounded-2xl px-6 py-2 border-[#484E53] dark:border-[#4FC3F7] ${
-                  activeCategories.includes(category)
-                    ? "active dark:bg-[#4FC3F7] bg-[#151C25]  text-[#FFFFFF]"
-                    : "dark:text-white"
-                }`}
-                onClick={() => toggleCategory(category)}
+                className="border rounded-2xl w-2/3 md:w-full px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]   dark:text-white"
+                onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                {category === "AI/LLMS" ? "AI/LLMS" : category}
+                {dropdownOpen ? "Close Menu " : "Filter Projects"}
               </button>
-            ))}
+              {dropdownOpen && (
+                <div className="mt-2 flex flex-col gap-y-2">
+                  {allCategories.map((category) => (
+                    <button
+                      key={category}
+                      className={`project-border border rounded-2xl w-full px-6 py-2 border-[#484E53] dark:border-[#4FC3F7] ${
+                        activeCategories.includes(category)
+                          ? "active dark:bg-[#4FC3F7] bg-[#151C25] text-[#FFFFFF]"
+                          : "dark:text-white"
+                      }`}
+                      onClick={() => toggleCategory(category)}
+                    >
+                      {category === "AI/LLMS" ? "AI/LLMS" : category}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
-          {/* Dropdown for sm screens */}
-          <div className="md:hidden w-full flex flex-col items-center">
-            <button
-              className="border rounded-2xl w-2/3 md:w-full px-6 py-2 border-[#484E53] dark:border-[#4FC3F7]   dark:text-white"
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-            >
-              {dropdownOpen ? "Close Menu " : "Filter Projects"}
-            </button>
-            {dropdownOpen && (
-              <div className="mt-2 flex flex-col gap-y-2">
-                {allCategories.map((category) => (
-                  <button
-                    key={category}
-                    className={`project-border border rounded-2xl w-full px-6 py-2 border-[#484E53] dark:border-[#4FC3F7] ${
-                      activeCategories.includes(category)
-                        ? "active dark:bg-[#4FC3F7] bg-[#151C25] text-[#FFFFFF]"
-                        : "dark:text-white"
-                    }`}
-                    onClick={() => toggleCategory(category)}
-                  >
-                    {category === "AI/LLMS" ? "AI/LLMS" : category}
-                  </button>
-                ))}
-              </div>
-            )}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 md:py-20 dark:bg-[#1A1A1A] bg-[#E0E8F6] pt-20">
+              {/* Render filtered projects */}
+              {data.filter(filterProjectByCategories).map((project, index) => (
+                <ProjectsDiv
+                  key={index}
+                  title={project.title}
+                  category={project.category}
+                  image={project.image}
+                  description={project.description}
+                  technologies={project.technologies}
+                  siteurl={project.siteurl}
+                  darkMode={darkMode}
+                  handleModal={() => handleModal(project.videourl)}
+                  handleVisitSite={handleVisitSite}
+                  isNew={index < 2 && project.isNew}
+                />
+              ))}
+            </div>
           </div>
         </div>
-
-        <div className="flex justify-center">
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 md:py-20 dark:bg-[#1A1A1A] bg-[#E0E8F6] pt-20">
-    {/* Render filtered projects */}
-    {data.filter(filterProjectByCategories).map((project, index) => (
-      <ProjectsDiv
-        key={index}
-        title={project.title}
-        category={project.category}
-        image={project.image}
-        description={project.description}
-        technologies={project.technologies}
-        siteurl={project.siteurl}
-        darkMode={darkMode}
-        handleModal={() => handleModal(project.videourl)}
-        handleVisitSite={handleVisitSite}
-        isNew={index < 2 && project.isNew}
-      />
-    ))}
-  </div>
-</div>
-
       </div>
     </section>
   );
